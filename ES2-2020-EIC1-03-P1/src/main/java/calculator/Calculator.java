@@ -8,16 +8,16 @@ public class Calculator {
 	
 	/**
 	 * Metodo main
-	 * @param args
+	 * @param args - ""
 	 */
 	public static void main(String[] args) {
 		System.out.println("Calculadora");
 	}
 	
 	/**
-	 * Faz a soma dos dois números dados
-	 * @param x - primeiro número
-	 * @param y - segundo número
+	 * Faz a soma dos dois nï¿½meros dados
+	 * @param x - primeiro nï¿½mero
+	 * @param y - segundo nï¿½mero
 	 * @return - o resultado: x+y
 	 */
 	public int soma (int x, int y) {
@@ -25,9 +25,9 @@ public class Calculator {
 	}
 	
 	/**
-	 * Faz a subtraçao dos dois números dados
-	 * @param x - primeiro número
-	 * @param y - segundo número
+	 * Faz a subtraï¿½ao dos dois nï¿½meros dados
+	 * @param x - primeiro nï¿½mero
+	 * @param y - segundo nï¿½mero
 	 * @return - o resultado: x-y
 	 */
 	public int subtracao (int x, int y) {
@@ -35,9 +35,9 @@ public class Calculator {
 	}
 	
 	/**
-	 * Faz a multiplicação dos dois números dados
-	 * @param x - primeiro número
-	 * @param y - segundo número
+	 * Faz a multiplicaï¿½ï¿½o dos dois nï¿½meros dados
+	 * @param x - primeiro nï¿½mero
+	 * @param y - segundo nï¿½mero
 	 * @return - o resultado: x*y
 	 */
 	public int multiplicacao (int x, int y) {
@@ -45,8 +45,8 @@ public class Calculator {
 	}
 	
 	/**
-	 * Calcula o quadrado do número passado como argumento
-	 * @param x - número para descobrir o quadrado
+	 * Calcula o quadrado do nï¿½mero passado como argumento
+	 * @param x - nï¿½mero para descobrir o quadrado
 	 * @return - o resultado: x*x
 	 */
 	public int quadrado (int x) {
@@ -54,9 +54,9 @@ public class Calculator {
 	}
 	
 	/**
-	 * Verifica se o número dado é par
-	 * @param x - número para verificar
-	 * @return - true se x%2=0 (é par) ou falso caso contrário
+	 * Verifica se o nï¿½mero dado ï¿½ par
+	 * @param x - nï¿½mero para verificar
+	 * @return - true se x%2=0 (ï¿½ par) ou falso caso contrï¿½rio
 	 */
 	public boolean isPar(int x) {
 		if(x%2==0)
