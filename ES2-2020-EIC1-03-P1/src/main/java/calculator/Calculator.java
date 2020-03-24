@@ -11,7 +11,7 @@ public class Calculator {
 	 * @param args - ""
 	 */
 	public static void main(String[] args) {
-		System.out.println("Calculadora");
+		System.out.println("Calculadora ES2");
 	}
 	
 	/**
