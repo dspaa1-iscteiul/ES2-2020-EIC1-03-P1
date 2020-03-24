@@ -5,7 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'Starting Build Process'
-        sh 'mvn clean install'
+        sh 'mvn compile'
         echo 'Build Step Complete'
       }
     }
