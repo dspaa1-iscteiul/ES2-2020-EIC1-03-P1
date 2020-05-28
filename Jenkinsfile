@@ -32,7 +32,7 @@ stage('Docker Login and Push Image'){
     withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'dockerpasswd', usernameVariable: 'dockeruser')]) {
     powershell "docker login -u ${dockeruser} -p ${dockerpasswd}"
     }
-    powershell "docker push ${dockeruser}/ubuntu:16.04"
+    powershell "docker push ${dockeruser}/calculator_hello_world:1.0"
     }
 
 }
