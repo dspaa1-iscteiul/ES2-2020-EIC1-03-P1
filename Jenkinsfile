@@ -7,6 +7,12 @@ node {
 stage('Git Checkout') {
     git 'https://github.com/dspaa1-iscteiul/ES2-2020-EIC1-03-P1.git'
     }
+   
+stage('Maven Package') {
+   steps {
+        sh 'mvn -B -DskipTests clean package'
+         }
+    }
     
 stage('Build Docker Imagae'){
      powershell "docker build -t  ${imagename} ."
