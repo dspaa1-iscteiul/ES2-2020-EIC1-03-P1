@@ -1,11 +1,11 @@
 def dockeruser = "dspaa1"
-def imagename = "ubuntu:16"
-def container = "apache2"
+def imagename = "Calculator-Hello-World"
+def container = "hello_world_app"
 node {
-   echo 'Building Apache Docker Image'
+   echo 'Building Calculator-Hello-World Docker Image'
 
 stage('Git Checkout') {
-    git 'https://github.com/jvpreis/ESII'
+    git 'https://github.com/dspaa1-iscteiul/ES2-2020-EIC1-03-P1.git'
     }
     
 stage('Build Docker Imagae'){
@@ -25,7 +25,7 @@ stage ('Runing Container to test built Docker Image'){
     }
     
 stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${env.dockeruser}/ubuntu:16.04"
+    powershell "docker tag ${imagename} ${env.dockeruser}/Calculator_Hello_World"
     }
 
 stage('Docker Login and Push Image'){
