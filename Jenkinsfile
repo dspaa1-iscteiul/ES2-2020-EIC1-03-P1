@@ -1,5 +1,5 @@
 def dockeruser = "dspaa1"
-def imagename = "Calculator-Hello-World"
+def imagename = "calculator-hello-world"
 def container = "hello_world_app"
 node {
    echo 'Building Calculator-Hello-World Docker Image'
