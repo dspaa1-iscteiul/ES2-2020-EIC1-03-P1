@@ -25,7 +25,7 @@ stage ('Runing Container to test built Docker Image'){
     }
     
 stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${env.dockeruser}/Calculator_Hello_World"
+    powershell "docker tag ${imagename} ${env.dockeruser}/calculator_hello_world"
     }
 
 stage('Docker Login and Push Image'){
