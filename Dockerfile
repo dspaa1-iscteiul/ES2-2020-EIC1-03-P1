@@ -1,10 +1,5 @@
-# Source Image name
-from ubuntu:16.04
-# Mainter Name
-maintainer Amar Singh
-# Command to update and install Apache packages
-RUN apt-get update && apt-get install apache2 -y
-# open port 
-EXPOSE 80
-# Command to run Apache server in background
-CMD /usr/sbin/apache2ctl -D FOREGROUND
+FROM openjdk:8-alpine
+COPY ES2-2020-EIC1-03-P1-1.0.jar /usr/hello_world_app/
+WORKDIR /usr/hello_world_app
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "ES2-2020-EIC1-03-P1-1.0.jar"]
