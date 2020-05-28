@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pt.iul.ista</groupId>
 	<artifactId>ES2-2020-EIC1-03-P1</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>ES2-2020-EIC1-03-P1</name>
 
 	<properties>
