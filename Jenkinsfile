@@ -13,11 +13,11 @@ stage('Build Docker Imagae'){
     }
     
 stage('Stop Existing Container'){
-   powershell "docker ps -a -q --filter name=hello_world_app | FindStr -q . if(\$?) { docker stop hello_world_app }"
+   powershell "docker ps -a -q --filter name=${container} | FindStr -q . if(\$?) { docker stop ${container} }"
     }
     
 stage('Remove Existing Container'){
-   powershell "docker ps -a -q --filter name=hello_world_app | FindStr -q . if(\$?) { docker rm hello_world_app }"
+   powershell "docker ps -a -q --filter name=${container} | FindStr -q . if(\$?) { docker rm ${container} }"
     }
     
 stage ('Runing Container to test built Docker Image'){
