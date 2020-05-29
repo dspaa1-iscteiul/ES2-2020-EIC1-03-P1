@@ -13,11 +13,11 @@ stage('Build Docker Imagae'){
     }
     
 stage('Stop Existing Container'){
-     powershell "docker stop ${container} || true"
+   powershell "docker ps -a -q --filter name=${container} | grep -q . && docker stop ${container}"
     }
     
 stage('Remove Existing Container'){
-     powershell "docker rm ${container} || true"
+     powershell "docker ps -a -q --filter name=${container} | grep -q . && docker rm ${container} || true"
     }
     
 stage ('Runing Container to test built Docker Image'){
