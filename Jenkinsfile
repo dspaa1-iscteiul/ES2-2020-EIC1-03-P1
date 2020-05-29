@@ -27,4 +27,11 @@ stage ('Runing Container to test built Docker Image'){
 stage('Tag Docker Image'){
     powershell "docker tag ${imagename} ${env.dockeruser}/calculator_hello_world"
     }
+
+stage('Docker Login and Push Image'){
+    withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'dockerpasswd', usernameVariable: 'dockeruser')]) {
+    powershell "docker login -u ${dockeruser} -p ${dockerpasswd}"
+    }
+    powershell "docker push ${dockeruser}/calculator_hello_world"
+    }
 }
